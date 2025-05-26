@@ -17,8 +17,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build with Maven
-        run: mvn clean install -DskipTests  
-        working-directory: ./FirstRepo
+        run: mvn clean install -DskipTests
       - name: Compile Java program
         run: javac HelloWorld.java
       - name: Initialize CodeQL
